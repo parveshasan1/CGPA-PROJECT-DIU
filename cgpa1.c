@@ -51,17 +51,17 @@ float calculate_gpa(Course courses[], int num_courses) {
 }
 
 void display_waiver(float cgpa) {
-    printf("\n🏅 Waiver Status:\n");
+    printf("\n Waiver Status:\n");
     if (cgpa >= 3.95)
-        printf("🎉 100%% Tuition Waiver!\n");
+        printf(" 100%% Tuition Waiver!\n");
     else if (cgpa >= 3.85)
-        printf("🎉 75%% Tuition Waiver!\n");
+        printf(" 75%% Tuition Waiver!\n");
     else if (cgpa >= 3.75)
-        printf("🎉 50%% Tuition Waiver!\n");
+        printf(" 50%% Tuition Waiver!\n");
     else if (cgpa >= 3.60)
-        printf("🎉 25%% Tuition Waiver!\n");
+        printf(" 25%% Tuition Waiver!\n");
     else
-        printf("😞 No Tuition Waiver. Try harder!\n");
+        printf(" No Tuition Waiver. Try harder!\n");
 }
 
 int main() {
@@ -126,18 +126,18 @@ int main() {
 
             case 2: {
                 if (num_semesters == 0) {
-                    printf("⚠️ Please add at least one semester first.\n");
+                    printf(" Please add at least one semester first.\n");
                 } else {
                     float cgpa = total_grade_points / total_credits;
-                    printf("\n📚 Total Semesters: %d\n", num_semesters);
-                    printf("🎓 Overall CGPA: %.2f\n", cgpa);
+                    printf("\n Total Semesters: %d\n", num_semesters);
+                    printf(" Overall CGPA: %.2f\n", cgpa);
                     display_waiver(cgpa);
                 }
                 break;
             }
 
             case 3:
-                printf("👋 Thank you! Exiting...\n");
+                printf(" Thank you! Exiting...\n");
                 break;
 
             default:
