@@ -10,12 +10,14 @@ typedef struct {
 
 
 typedef struct {
+  
     Course courses[20];
     int num_courses;
     float semester_gpa;
     float semester_points;
     float semester_credits;
 } Semester;
+
 float get_grade_point(int code) {
     switch(code) {
         case 1: return 4.00;
@@ -74,7 +76,8 @@ void display_waiver(float cgpa) {
 int main() {
     int choice;
     int num_semesters = 0;
-    Semester semesters[10]; 
+    
+    Semester semesters[10];
 
     printf(" Welcome to DIU CGPA Calculator\n");
 
@@ -83,7 +86,7 @@ int main() {
         printf("1. Add Semester GPA\n");
         printf("2. Show CGPA + Waiver\n");
         printf("3. Exit\n");
-        printf("Enter choice: ");
+        printf("Enter your choice: ");
         scanf("%d", &choice);
 
         switch(choice) {
