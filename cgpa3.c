@@ -82,7 +82,7 @@ int main() {
     printf(" Welcome to DIU CGPA Calculator\n");
 
     do {
-        printf("\n--- MENU ---\n");
+        printf("\n        MENU         \n");
         printf("1. Add Semester GPA\n");
         printf("2. Show CGPA + Waiver\n");
         printf("3. Exit\n");
