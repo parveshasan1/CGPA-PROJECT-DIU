@@ -2,18 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-// This program calculates a student's semester GPA and overall CGPA.
-// It is designed to handle multiple semesters and adheres to the
-// requirements outlined in the project brief.
-
-// Struct to hold course information
 typedef struct {
     char name[50];
     float credit_hours;
     float grade_point;
 } Course;
 
-// Struct to hold semester information, including an array of courses
+
 typedef struct {
     Course courses[20];
     int num_courses;
@@ -21,8 +16,6 @@ typedef struct {
     float semester_points;
     float semester_credits;
 } Semester;
-
-// Function to convert a grade code to a grade point
 float get_grade_point(int code) {
     switch(code) {
         case 1: return 4.00;
@@ -54,7 +47,6 @@ void show_grade_menu() {
     printf("10. F (0.00)\n");
 }
 
-// Function to calculate GPA for a given set of courses
 float calculate_gpa(Course courses[], int num_courses) {
     float total_points = 0.0, total_credits = 0.0;
     for (int i = 0; i < num_courses; i++) {
@@ -66,7 +58,6 @@ float calculate_gpa(Course courses[], int num_courses) {
     return total_points / total_credits;
 }
 
-// Function to display tuition waiver status based on CGPA
 void display_waiver(float cgpa) {
     printf("\n Waiver Status:\n");
     if (cgpa >= 3.95)
@@ -84,7 +75,7 @@ void display_waiver(float cgpa) {
 int main() {
     int choice;
     int num_semesters = 0;
-    Semester semesters[10]; // Array to hold data for up to 10 semesters
+    Semester semesters[10]; 
 
     printf(" Welcome to DIU CGPA Calculator\n");
 
