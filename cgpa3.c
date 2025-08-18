@@ -32,7 +32,6 @@ float get_grade_point(int code) {
     }
 }
 
-// Function to display the grade codes menu
 void show_grade_menu() {
     printf("\nGrade Codes:\n");
     printf("1. A+ (4.00)\n");
