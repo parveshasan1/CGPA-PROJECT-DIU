@@ -36,16 +36,16 @@ float get_grade_point(int code) {
 
 void show_grade_menu() {
     printf("\nGrade Codes:\n");
-    printf("1. A+ (4.00)\n");
-    printf("2. A  (3.75)\n");
-    printf("3. A- (3.50)\n");
-    printf("4. B+ (3.25)\n");
-    printf("5. B  (3.00)\n");
-    printf("6. B- (2.75)\n");
-    printf("7. C+ (2.50)\n");
-    printf("8. C  (2.25)\n");
-    printf("9. D  (2.00)\n");
-    printf("10. F (0.00)\n");
+    printf("1  A+ (4.00)\n");
+    printf("2  A  (3.75)\n");
+    printf("3  A- (3.50)\n");
+    printf("4  B+ (3.25)\n");
+    printf("5  B  (3.00)\n");
+    printf("6  B- (2.75)\n");
+    printf("7  C+ (2.50)\n");
+    printf("8  C  (2.25)\n");
+    printf("9  D  (2.00)\n");
+    printf("10  F (0.00)\n");
 }
 
 float calculate_gpa(Course courses[], int num_courses) {
